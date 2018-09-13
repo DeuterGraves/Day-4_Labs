@@ -24,7 +24,7 @@ class TestFriends < MiniTest::Test
       friends: ["Fred"],
       favourites: {
         tv_show: "Baywatch",
-        snacks: ["soup","bread"]
+        snacks: ["soup", "twizzlers","bread"]
       }
     }
 
@@ -57,7 +57,7 @@ class TestFriends < MiniTest::Test
       friends: [],
       favourites: {
         tv_show: "X-Files",
-        snacks: ["spinach"]
+        snacks: ["chocolate","spinach"]
       }
     }
 
@@ -80,12 +80,19 @@ class TestFriends < MiniTest::Test
 
 
 
-
-
-
-
   # 3. For a given person, check if they like a particular food
   # (e.g. the function likes_to_eat(@person2, "bread") should return true, likes_to_eat(@person3, "spinach") should return false)
+
+def test_likes_to_eat_true
+  result = likes_to_eat(@person2, "bread")
+  assert_equal(true, result)
+end
+
+def test_likes_to_eat_false
+  result = likes_to_eat(@person3, "spinach")
+  assert_equal(false, result)
+end
+
 
   # 4. For a given person, add a new name to their list of friends
   # (e.g. the function add_friend(@person2, "Scrappy-Doo") should add Scrappy-Doo to the friends.)
