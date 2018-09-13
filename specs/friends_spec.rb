@@ -114,7 +114,7 @@ end
     assert_equal(3, friend_length)
   end
 
-
+# also runs a test checking the array length after deleting a friend that doesn't exist to make sure that it's not doing anything it shouldn't
 
   # 6. Find the total of everyone's money
   # (hint: use the @people array, remember how we checked the total number of eggs yesterday?)
@@ -123,6 +123,8 @@ end
     result = total_money(@people)
     assert_equal(143, result)
   end
+  
+  # assert_equal(143, total_money(@people))
 
 
   # 7. For two given people, allow the first person to loan a given value of money to the other
@@ -136,6 +138,8 @@ def test_financial_loan
   assert_equal(58 , lender_purse)
   assert_equal(43 , lendee_purse)
 end
+  
+  # didn't need variables - assert_equal(58, @person5[:monies]
 
 def test_financial_loan1
   result = financial_loan(@person5, @person1, 42)
@@ -152,9 +156,13 @@ end
 
   # 8. Find the set of everyone's favourite food joined together
   # (hint: concatenate the favourites/snack arrays together)
-
+# get an array of everyone's food.
+  
+  # creates a variable holding the array of all the food for the test
 
   # 9. Find people with no friends
   # (hint: return an array, there might be more people in the future with no friends!)
+  
+  # array needed in function, not necessarily in test. 
 
 end
