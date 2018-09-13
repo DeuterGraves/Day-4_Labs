@@ -38,5 +38,25 @@ end
 def financial_loan(lender, lendee, amount)
   lender[:monies] -= amount
   lendee[:monies] += amount
-
 end
+
+=begin
+fav foods 
+create empty array
+for loop for people
+for loop for snacks
+push to empty favorite foods array
+
+return array at the end
+
+or run a concaninate method on the arrays? for person in people concatinate the snacks array
+
+no friends
+create array - empty no mates
+for person in people
+if friends length = 0 
+push to the empty array 
+end loop
+return no mates. 
+
+=end
