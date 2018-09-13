@@ -108,6 +108,15 @@ end
 
   # 5. For a given person, remove a specific name from their list of friends
   # (hint: Same as above, testing for the length of the array should be sufficient)
+  def test_unfriend
+    result = unfriend(@person1, "Fred")
+    friend_length = @person1[:friends].length
+    assert_equal(3, friend_length)
+  end
+
+
+
+
 
 
   # 6. Find the total of everyone's money

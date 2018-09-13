@@ -19,3 +19,10 @@ end
 def add_friend(person, new_friend)
   person[:friends].push(new_friend)
 end
+
+
+
+
+def unfriend(person, frennemy)
+  person[:friends].delete(frennemy)
+end
