@@ -26,3 +26,11 @@ end
 def unfriend(person, frennemy)
   person[:friends].delete(frennemy)
 end
+
+def total_money(people)
+  total_money = 0
+  for person in people
+    total_money += person[:monies]
+  end
+  return total_money
+end
